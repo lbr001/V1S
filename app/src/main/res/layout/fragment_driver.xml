@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/driver_linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="86dp"
+            android:background="@mipmap/fy_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/warn_one"
+            android:textColor="@color/color9"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/driver_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:divider="@drawable/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style_one"
+                android:onClick="onClick"
+                android:text="@string/print_all"
+                android:textColor="@color/color3"
+                android:textSize="26px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

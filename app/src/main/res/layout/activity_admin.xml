@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color5"
+    tools:context=".helper.activity.AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/admin_liear1"
+        android:layout_width="686px"
+        android:layout_height="225px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_linear"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/pro_one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/admin_product_sale"
+                android:textColor="@color/color2"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/today_sale"
+                android:textColor="@color/color1"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_admin_today_sale"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color6"
+                android:textSize="42px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/yesterday_sale"
+                    android:textColor="@color/color1"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_admin_yesterday_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color6"
+                    android:textSize="24px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admin_linear2"
+        android:layout_width="686px"
+        android:layout_height="225px"
+        android:layout_below="@id/admin_liear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_linear"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/pro_two" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ticket_destory"
+                android:textColor="@color/color2"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/today_destory"
+                android:textColor="@color/color1"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_admin_today_destory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color6"
+                android:textSize="42px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/yesterday_destory"
+                    android:textColor="@color/color1"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_admin_yesterday_destory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color6"
+                    android:textSize="24px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_rela2"
+        android:layout_width="700px"
+        android:layout_height="225px"
+        android:layout_below="@id/admin_linear2"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/admin_history"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/history_query"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/admin_refund"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/admin_history"
+            android:background="@mipmap/refund_ticket"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_rela3"
+        android:layout_width="700px"
+        android:layout_height="225px"
+        android:layout_below="@id/admin_rela2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp">
+
+        <Button
+            android:id="@+id/admin_market"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/market"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/admin_member"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/admin_market"
+            android:background="@mipmap/hdzq"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_rela4"
+        android:layout_width="700px"
+        android:layout_height="225px"
+        android:layout_below="@id/admin_rela3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp">
+
+        <Button
+            android:id="@+id/admin_settings"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/settings"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/admin_exit"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/admin_settings"
+            android:background="@mipmap/exit"
+            android:onClick="onClick" />
+    </RelativeLayout>
+</RelativeLayout>

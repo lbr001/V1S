@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    tools:context=".helper.activity.HistoryOfCancleActivity">
+
+    <include layout="@layout/header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/f_ticket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/t_btn_ticket_false"
+                style="@style/fragment_tab_item_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/a2" />
+
+            <Button
+                android:id="@+id/t_btn_ticket_true"
+                style="@style/fragment_tab_item_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/a1"
+                android:onClick="onClick" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/f_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/t_btn_group_false"
+                style="@style/fragment_tab_item_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/b2" />
+
+            <Button
+                android:id="@+id/t_btn_group_true"
+                style="@style/fragment_tab_item_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/b1"
+                android:onClick="onClick" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/f_driver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/t_btn_driver_false"
+                style="@style/fragment_tab_item_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/c2" />
+
+            <Button
+                android:id="@+id/t_btn_driver_true"
+                style="@style/fragment_tab_item_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/c1"
+                android:onClick="onClick" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/f_tj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/t_btn_tj_false"
+                style="@style/fragment_tab_item_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/d2" />
+
+            <Button
+                android:id="@+id/t_btn_tj_true"
+                style="@style/fragment_tab_item_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/d1"
+                android:onClick="onClick" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-20dp"
+        android:background="@color/color7" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

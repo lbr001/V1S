@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color3"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color7" />
+
+    <com.sunmi.helper.view.AlwaysMarqueeTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/mar_name"
+        android:textColor="@color/color6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/attr_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="86dp"
+                android:src="@mipmap/fy_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/null_of_travel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attr_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/group_et_info"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/et_back"
+                    android:hint="@string/check_hint"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color2"
+                    android:textSize="24px" />
+
+                <ImageButton
+                    android:id="@+id/group_check"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@mipmap/check_btn"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textColor="@color/color2"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/zj_num"
+                        android:textColor="@color/color2"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/rz_time"
+                        android:textColor="@color/color2"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rz_state"
+                        android:textColor="@color/color2"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/attr_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/divider"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

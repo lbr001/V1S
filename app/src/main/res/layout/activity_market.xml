@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/market_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sale_money"
+                    android:textColor="@color/color3"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/sale_money"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/mview_two" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cancle_num"
+                    android:textColor="@color/color3"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_cancle_count"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="48px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="270dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/mview_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sale"
+                    android:textColor="@color/color3"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_sale_count"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/mview_two" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/refund"
+                    android:textColor="@color/color3"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_back_count"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/mview_two" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/refund_money"
+                    android:textColor="@color/color3"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_count"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="48px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/linear_style_two"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_sjtj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sjtj"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="@string/market_lone"
+                android:textColor="@color/color11"
+                android:textSize="28px" />
+
+            <View
+                android:id="@+id/v_sjtj"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@color/color11"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_txtj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtj"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="@string/market_ltwo"
+                android:textColor="@color/color11"
+                android:textSize="28px" />
+
+            <View
+                android:id="@+id/v_txtj"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@color/color11"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color5">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/market_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contant_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    tools:context=".helper.activity.ProductSale">
+
+    <include
+        android:id="@+id/pro_header"
+        layout="@layout/header" />
+
+    <View
+        android:id="@+id/pro_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pro_header"
+        android:background="@color/color7" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pro_view"
+        android:background="@color/color5"
+        android:orientation="vertical">
+
+        <include
+
+            layout="@layout/layout_mian_shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/order_bottom"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/order_ima"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_above="@id/order_bottom"
+            android:layout_marginBottom="-35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/prosale_order"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/list_size"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_above="@id/order_bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="-18dp"
+            android:layout_toRightOf="@id/order_ima"
+            android:background="@mipmap/tv_pro_back"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="24px"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/order_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@mipmap/bottom_back"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/money_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eb6b65"
+                android:onClick="onClick"
+                android:text="@string/to_pay"
+                android:textColor="#ffffff"
+                android:textSize="28px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

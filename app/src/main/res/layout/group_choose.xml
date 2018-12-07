@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tv_style_two"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/tv_style_one"
+        android:gravity="center"
+        android:text="@string/group_info"
+        android:textColor="@color/color3"
+        android:textSize="36px" />
+
+    <ListView
+        android:id="@+id/group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:scrollbars="none" />
+</LinearLayout>

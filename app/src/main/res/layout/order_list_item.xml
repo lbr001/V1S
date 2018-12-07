@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/order_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/order_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="222"
+            android:textColor="@color/color2"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="¥"
+                android:textColor="@color/color9"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_logo"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/color9"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tv_count_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/order_num"
+                android:text="x"
+                android:textColor="@color/color9"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/money_count"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/color2"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_ji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@id/money_count"
+                android:text="¥"
+                android:textColor="@color/color2"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/money_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="333"
+                android:textColor="@color/color2"
+                android:textSize="36px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/color4">
+
+        <ImageView
+            android:id="@+id/ima_one"
+            android:layout_width="5px"
+            android:layout_height="80px"
+            android:background="@mipmap/bak_ima" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/ima_one"
+            android:text="@string/select_goods"
+            android:textColor="@color/color9"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="33px"
+                android:background="@mipmap/delete_logo" />
+
+            <TextView
+                android:id="@+id/tv_dsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:text="@string/clear_goods"
+                android:textColor="@color/color9"
+                android:textSize="24px" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color5">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    tools:context=".helper.activity.OrderActivity">
+
+    <include
+        android:id="@+id/order_include"
+        layout="@layout/header" />
+
+    <View
+        android:id="@+id/order_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/order_include"
+        android:background="@color/color7" />
+
+    <ListView
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mlinear2"
+        android:layout_below="@id/order_view"
+        android:divider="@drawable/divider"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/mlinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/goods_count"
+                android:textColor="@color/color2"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_ticket_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/color2"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/goods_money"
+                android:textColor="@color/color2"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_money_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/color2"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color11">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@id/commit_order"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/order_pay_money"
+                    android:textColor="@color/color3"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_money_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/color3"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/commit_order"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/color10"
+                android:onClick="onClick"
+                android:text="@string/order_commit"
+                android:textColor="@color/color3"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

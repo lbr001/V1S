@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunmi">
+    <!-- 设置访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 获取IMEI码权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- wifi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- NFC -->
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".helper.utils.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/tps_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tps_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".helper.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 管理员activity-->
+        <activity android:name=".helper.activity.AdminActivity" />
+        <!-- 普通账号activity-->
+        <activity android:name=".helper.activity.MainActivity" />
+        <!--支付activity -->
+        <activity android:name=".helper.activity.PayActivity" />
+        <!-- 订单详情activity-->
+        <activity android:name=".helper.activity.OrderActivity" />
+        <!-- 设置activity-->
+        <activity android:name=".helper.activity.SettingActivity" />
+        <!-- 产品售卖activity-->
+        <activity android:name=".helper.activity.ProductSale" />
+        <!-- 门票核销activity-->
+        <activity android:name=".helper.activity.TicketActivity" />
+        <!-- 营销统计activity-->
+        <activity android:name=".helper.activity.MarketInfoActivity" />
+        <!--核销历史activity-->
+        <activity android:name=".helper.activity.HistoryOfCancleActivity" />
+        <!--销售历史activity-->
+        <activity android:name=".helper.activity.SaleHistory" />
+        <!--退票activity-->
+        <activity android:name=".helper.activity.RefundTicket" />
+        <!--活动专区activity-->
+        <activity android:name=".helper.activity.AreaActivity" />
+        <!--招徕奖励activity-->
+        <activity android:name=".helper.activity.AttcrtActivity" />
+        <!--招徕奖励游团activity-->
+        <activity android:name=".helper.activity.GroupActivity" />
+        <!--激活IC卡activity-->
+        <activity android:name=".helper.activity.SensitizedActivity" />
+        <!--领取补贴activity-->
+        <activity android:name=".helper.activity.SubsidyActivity" />
+        <!--补贴订单列表activity-->
+        <activity android:name=".helper.activity.SubListInfo" />
+        <!--实名制认证activity-->
+        <activity android:name=".helper.activity.Certification" />
+    </application>
+
+</manifest>

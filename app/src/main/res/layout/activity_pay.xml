@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    tools:context=".helper.activity.PayActivity">
+
+    <include layout="@layout/header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="@string/pay_way"
+            android:textColor="#000000"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:id="@+id/pay_linear_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Ima_money_pay"
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:background="@mipmap/money"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:layout_width="135px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/money"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Ima_ali_pay"
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:background="@mipmap/ali"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:layout_width="135px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/ali"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Ima_wx_pay"
+                    android:layout_width="135px"
+                    android:layout_height="135px"
+                    android:background="@mipmap/wx"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:layout_width="135px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/wx"
+                    android:textColor="#000000"
+                    android:textSize="28px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_linear_one"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_warn"
+                android:textColor="#eb6b65"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/pay_warn_one"
+                android:textColor="#eb6b65"
+                android:textSize="24px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#bebebe"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/pay_Image_logo"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/pay_count"
+                    android:textColor="#ffffff"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/pay_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:text="¥"
+                    android:textColor="@color/color3"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/pay_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/color3"
+                    android:textSize="36px" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

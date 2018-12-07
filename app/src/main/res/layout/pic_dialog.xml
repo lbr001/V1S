@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="621px"
+    android:layout_height="621px"
+    android:background="@drawable/bg_linear_one"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image_ic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pic_ic"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pic_id"
+        android:visibility="gone" />
+</LinearLayout>
+
+
+

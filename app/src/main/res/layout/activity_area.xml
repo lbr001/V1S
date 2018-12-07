@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    tools:context=".helper.activity.AreaActivity">
+
+    <include layout="@layout/header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_attcrt"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/zljl"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_ly"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/lqbt"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jh_ic"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:background="@mipmap/jh"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_hy"
+            android:layout_width="350px"
+            android:layout_height="230px"
+            android:background="@mipmap/hyzq"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_smrz"
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:background="@mipmap/smrz"
+            android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    tools:context=".helper.activity.TicketActivity">
+
+    <include layout="@layout/header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/et_back"
+            android:hint="@string/activity_check_warn"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="24px" />
+
+        <ImageButton
+            android:id="@+id/check"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:background="@mipmap/check_btn"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_check"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/idcard_check"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/ic_check"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_check"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/bar_check"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bar_check"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style_one"
+            android:onClick="onClick"
+            android:text="@string/activity_check_button"
+            android:textColor="#ffffff"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_destory_count"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:textColor="@color/color6"
+            android:textSize="32px" />
+    </LinearLayout>
+</LinearLayout>

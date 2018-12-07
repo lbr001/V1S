@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">智游智在</string>
+    <!-- 登录界面-->
+    <string name="login_user">请输入用户名</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="get_num">获取设备码</string>
+    <string name="clear_num">清空</string>
+    <string name="login_bottom">沈阳商客网络科技有限公司提供技术支持</string>
+    <!-- 登录界面-->
+
+    <!--  账号登录主界面 -->
+    <string name="admin_product_sale">产品零售</string>
+    <string name="today_sale">今日销量</string>
+    <string name="yesterday_sale">昨日销量</string>
+    <string name="ticket_destory">门票核销</string>
+    <string name="today_destory">今日核销</string>
+    <string name="yesterday_destory">昨日核销</string>
+    <!--  账号登录主界面 -->
+
+    <!--设置界面 -->
+    <string name="mdes">打印是否销票:</string>
+    <string name="destory">销票</string>
+    <string name="not_destory">不销票</string>
+    <string name="net_address">域名设置:</string>
+    <string name="machine_code">设备码:</string>
+    <string name="machine_password">设备密码:</string>
+    <string name="setting_printer">打印机:</string>
+    <string name="open">启用</string>
+    <string name="not_open">不启用</string>
+    <string name="setting_ic">刷居游卡:</string>
+    <string name="setting_id">刷身份证:</string>
+    <string name="ticket_type">打印票类型:</string>
+    <string name="code_type">票码类型:</string>
+    <string name="smart">小票</string>
+    <string name="paper">景区高端纸质票</string>
+    <string name="code_one">一码一票</string>
+    <string name="code_lot">一码多票</string>
+    <!--设置界面 -->
+
+
+    <!-- 公共-->
+    <string name="name">姓名</string>
+    <string name="zj_num">证件号码</string>
+    <string name="rz_time">认证时间</string>
+    <string name="rz_state">认证状态</string>
+    <string name="warn_one">暂无查询结果</string>
+    <string name="warn_two">暂无销票详情</string>
+    <string name="ticket_num">票总数量:</string>
+    <string name="ticket_name">票种名称:</string>
+    <string name="cancle">取消</string>
+    <string name="identify_fail">未安装API模块，无法进行二维码/身份证识别</string>
+    <string name="sure">确认</string>
+    <!-- 公共-->
+
+
+    <!--产品售卖 -->
+    <string name="to_pay">去结算</string>
+    <string name="select_goods">已选产品</string>
+    <string name="clear_goods">清空购物车</string>
+    <!-- 产品售卖-->
+
+
+    <!--订单列表 -->
+    <string name="goods_count">商品数量:</string>
+    <string name="goods_money">商品金额:</string>
+    <string name="order_pay_money">实付款</string>
+    <string name="order_commit">提交订单</string>
+    <!-- 订单列表-->
+
+    <!--销售历史 -->
+    <string name="activity_history_warn">暂无历史记录</string>
+    <!--销售历史 -->
+
+    <!--支付页 -->
+    <string name="pay_way">请选择支付方式:</string>
+    <string name="money">现金</string>
+    <string name="ali">支付宝</string>
+    <string name="wx">微信</string>
+    <string name="pay_warn">注:</string>
+    <string name="pay_warn_one">移动支付方方式请让游客打开付款码扫描即可</string>
+    <string name="pay_count">支付总金额</string>
+    <!--支付页 -->
+
+    <!-- 门票核销-->
+    <string name="ticket_choose">请选择要核销的票种</string>
+    <string name="mark_info">备注信息:</string>
+    <string name="lastest_modify_time">最后修改时间:</string>
+    <string name="car_num">车牌号码:</string>
+    <string name="mobile">联系方式:</string>
+    <string name="group_name">游团名称:</string>
+    <string name="guide_name">导游姓名:</string>
+    <string name="group_info">请选择要验票的游团</string>
+    <string name="mcancle">核销</string>
+    <string name="activity_check_warn">请输入订单唯一码</string>
+    <string name="activity_check_button">核销历史</string>
+    <!-- 门票核销-->
+
+
+    <!-- 核销历史-->
+    <string name="cancle_man_count">销票人数:</string>
+    <string name="used_time">使用时间:</string>
+    <string name="order_code">订单票号:</string>
+    <string name="driver_fragment_title">自驾订单详情</string>
+    <string name="print_all">打印全部</string>
+    <string name="guide_info">导游信息:</string>
+    <string name="sd_man">实到人数:</string>
+    <string name="order_info">订单详情</string>
+    <string name="yd_man">预定人数:</string>
+    <string name="reprint_ticket">重打小票</string>
+    <string name="cancle_time">销票时间:</string>
+    <string name="cancle_count">销票数量:</string>
+    <string name="cancle_way">销票方式:</string>
+    <string name="activity_cancle_lthree">自驾统计</string>
+    <string name="activity_cancle_lfour">团队统计</string>
+    <string name="activity_cancle_ltwo">团队预定</string>
+    <string name="activity_cancle_lone">景区门票</string>
+    <!-- 核销历史-->
+
+    <!--营销统计 -->
+    <string name="order_c">订单来源:</string>
+    <string name="datastatistics_count">使用/总数/退票:</string>
+    <string name="print_sale_info">打印明细</string>
+    <string name="nullsale">暂无售卖记录</string>
+    <string name="market_lone">数据统计</string>
+    <string name="market_ltwo">图形统计</string>
+    <string name="refund_money">退票总额(元)</string>
+    <string name="refund">退票(张)</string>
+    <string name="sale">销售(张)</string>
+    <string name="sale_money">销售金额(元)</string>
+    <string name="cancle_num">核销总数(张)</string>
+    <!--营销统计 -->
+
+
+    <!-- 销售历史 -->
+    <string name="pay_type">支付方式:</string>
+    <string name="order_num">订单编号:</string>
+    <string name="used_info">使用/购买/退票</string>
+    <string name="buy_time">购买时间:</string>
+    <string name="buy_money">购买总金额:</string>
+    <!-- 销售历史 -->
+
+
+    <!-- 退票申请 -->
+    <string name="refund_warn">请输入订单唯一码之后点击按钮查询</string>
+    <string name="used_count">使用数量:</string>
+    <string name="refund_count">退票数量:</string>
+    <string name="ticket_price">门票单价:</string>
+    <string name="way_of_pay">支付方式:</string>
+    <string name="money_of_refund">可退金额:</string>
+    <string name="refund_sure">退票确认</string>
+    <string name="way_of_refund">退款方式</string>
+    <!-- 退票申请 -->
+
+    <!--招徕奖励 -->
+    <string name="refresh">刷新</string>
+    <string name="name_attcrt">招徕奖励实名认证</string>
+    <string name="travel_name">游团名称</string>
+    <string name="null_of_group">暂无游团信息</string>
+    <string name="null_of_travel">暂无游客实名制信息</string>
+    <string name="mar_name">如需刷身份证请将身份证放置在刷卡区域</string>
+    <string name="check_hint">请输入姓名/身份证号码查询</string>
+    <!--招徕奖励 -->
+
+    <!--激活IC卡 -->
+    <string name="jh">激活IC卡</string>
+    <string name="reset">重置</string>
+    <string name="mn">No.</string>
+    <string name="mobile_hint">请输入手机号码</string>
+    <string name="sensitized">确认激活</string>
+    <!--激活IC卡 -->
+
+
+    <!--领取补贴-->
+    <string name="subsidised">领取补贴</string>
+    <string name="get_states">领取状态:</string>
+    <string name="get_time">领取时间:</string>
+    <string name="ID_Num">证件号码:</string>
+    <string name="get_details">领取详情</string>
+    <!--领取补贴-->
+    <!--补贴列表详情-->
+    <string name="sub_info">补贴列表详情</string>
+    <string name="sub_null">暂无列表详情</string>
+    <string name="spot_num">景区编号:</string>
+    <string name="tour_name">顾客姓名:</string>
+    <!--补贴列表详情-->
+
+    <!--实名认证-->
+    <string name="real_name">实名认证</string>
+    <string name="immediately">立即认证</string>
+    <!--实名认证-->
+</resources>
